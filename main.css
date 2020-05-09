@@ -1,0 +1,312 @@
+/* === GENERAL STYLES === */
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,p,ul,img,.subtitle {
+  margin-bottom: 1.5rem;
+}
+
+.locations,.program,.gifts,.informations,.contact {
+   margin: 1.5rem auto;
+   padding: .5rem 1rem;
+   text-align: center;
+   width: 95%;
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  background: url('assets/background.png') center;
+  font-size: 1.125rem;
+  color: #444349;
+  line-height: 1.5;
+}
+
+.program, .informations {
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  width: 100%;
+}
+
+h1,h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+   font-size: 3rem;
+}
+
+h3, .subtitle {
+  font-size: 1.5rem;
+}
+
+a {
+  color: #bd806e;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #eda087;
+  transition: all 0.5s ease-in-out;
+}
+
+/* === HEADER STYLES === */
+
+.cover {
+  background: url('assets/cover.jpg') no-repeat 70% center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: table;
+  text-align: center;
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.text {
+  background: hsla(100,0%,0%,.6);
+  padding: 0.625rem;
+  margin: 0 auto;
+  color: hsla(0,0%,100%,.9);
+}
+
+
+h1 {
+  font-size: 6.5rem;
+  color: #d2ba87;
+  margin-bottom: .1rem;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  color: #fff;
+  letter-spacing: .1rem;
+}
+
+.date {
+  font-size: 1.3rem;
+  color: #fff;
+  letter-spacing: .1rem;
+}
+
+hr {
+  border: 0.5px solid;
+  color: #fff;
+  width: 30%;
+}
+
+.date::before,
+.date::after {
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+
+/* === LOCATIONS STYLES === */
+
+h3 {
+  font-weight: bold;
+}
+
+.locations img {
+  height: 7.5rem;
+}
+
+.locations div {
+  font-family: 'Muli', sans-serif;
+}
+
+.block::after {
+  display: block;
+  content:"";
+  background-color: #444349;
+  height: .1875rem;
+  width: 30%
+    ;
+  margin: 1.5rem auto;
+}
+
+/* === PROGRAM STYLES === */
+
+.program p, ul {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+
+.program p {
+  font-style: italic;
+}
+
+ul {
+  letter-spacing: .025rem;
+}
+
+.program h2 {
+  margin-top: 1rem;
+}
+
+/* === GIFTS STYLES === */
+
+.gifts img {
+  height: 7.5rem;
+}
+
+.gifts p:last-child {
+  margin-bottom: 0;
+}
+
+/* === QUESTIONS AND ANSWERS STYLES === */
+
+.informations p {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+
+.question {
+  font-weight: bold;
+  margin-bottom: .3rem;
+}
+
+.informations h2 {
+  margin-top: 1rem;
+}
+
+.question-block::after {
+  display: block;
+  content:"";
+  background-color: #d2ba87;
+  height: .1875rem;
+  width: 50%;
+  margin: 1.5rem auto;
+}
+
+/* === FOOTER STYLES === */
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  text-align: center;
+  display: table;
+  background-color: #606060;
+  font-size: .875rem;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+}
+
+.footer-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+  
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer small {
+  line-height: 1.5;
+}
+
+/* === MEDIA QUERY === */
+
+/* === Header === */
+
+@media (min-width: 768px) {
+
+  .cover {
+    background: url('assets/cover.jpg') no-repeat center/cover;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .text {
+    width: 50%;
+    padding: 1.25rem;
+    border-radius: 5px;
+  }
+
+  .text h1 {
+    font-size: 6.5rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .tagline {
+    text-transform: uppercase;
+  }
+
+}
+
+/* === Locations === */
+
+@media (min-width: 768px) {
+  .block {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .block::after {
+    display: none;
+  }
+
+}
+
+/* === Program === */
+
+@media (min-width: 768px) {
+
+  .program-wrapper {
+    width: 30vw;
+    margin: 0 auto;
+  }
+
+}
+
+/* === Informations === */
+
+@media (min-width: 768px) {
+
+  .question-block {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .question-block::after {
+    display: none;
+  }
+
+  .subtitle {
+    text-align: left;
+  }
+
+}
+
+/* === Footer === */
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 7vh;
+  }
+
+}
+
+
